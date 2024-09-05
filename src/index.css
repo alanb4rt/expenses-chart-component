@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans.ttf");
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 400;
+
+  /* Colors */
+  --soft-red: hsl(10 79% 65%);
+  --cyan: hsl(186 34% 60%);
+
+  --dark-brown: hsl(25 47% 15%);
+  --medium-brown: hsl(28 10% 53%);
+  --cream: hsl(27 66% 92%);
+  --very-pale-orange: hsl(33 100% 98%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
