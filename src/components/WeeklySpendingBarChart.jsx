@@ -2,10 +2,17 @@ import data from "../data/data.json";
 import BarChart from "./BarChart";
 
 export default function WeeklySpendingBarChart() {
+  const maxAmount = Math.max(...data.map((item) => item.amount));
+
   return (
-    <div className="flex justify-between gap-2">
+    <div className="flex justify-between h-40 mt-12">
       {data.map((element, index) => (
-        <BarChart key={index} day={element.day} amount={element.amount} />
+        <BarChart
+          key={index}
+          day={element.day}
+          amount={element.amount}
+          maxAmount={maxAmount}
+        />
       ))}
     </div>
   );
