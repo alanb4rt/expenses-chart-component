@@ -35,3 +35,10 @@ body {
 
   background-color: var(--cream);
 }
+
+@media screen and (width < 640px) {
+  :root {
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+}
