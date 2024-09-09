@@ -8,7 +8,7 @@ export default function Dashboard() {
       <Card className="bg-[var(--very-pale-orange)]">
         <h2 className="text-2xl font-bold mb-4">Spending - Last 7 days</h2>
         <WeeklySpendingBarChart />
-        <hr className="border-[var(--cream)] my-4" />
+        <hr className="border-[var(--cream)] my-8" />
         <MonthlySpendingSummary />
       </Card>
     </main>
